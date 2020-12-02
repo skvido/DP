@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?>
+
+<plugin>
+	
+	<!-- Tab -->
+	
+	<extension id="CwaDLQueryModeTab" point="org.protege.editor.core.application.WorkspaceTab">
+        <label value="CWA and DL Query Mode"/>
+        <class value="org.protege.editor.owl.ui.OWLWorkspaceViewsTab"/>
+        <editorKitId value="OWLEditorKit"/>
+        <index value="Q"/>
+        <defaultViewConfigFileName value="viewconfig-cwadlquerytab.xml"/>
+    </extension>
+    
+    <extension id="CwaModeExtendedTab" point="org.protege.editor.core.application.WorkspaceTab">
+        <label value="CWA Mode Extended"/>
+        <class value="org.protege.editor.owl.ui.OWLWorkspaceViewsTab"/>
+        <editorKitId value="OWLEditorKit"/>
+        <index value="Q"/>
+        <defaultViewConfigFileName value="viewconfig-cwaextendedtab.xml"/>
+        <protegeDefaultTab value="true"/>
+    </extension>
+    
+    <extension id="CwaModeTab" point="org.protege.editor.core.application.WorkspaceTab">
+        <label value="CWA Mode"/>
+        <class value="org.protege.editor.owl.ui.OWLWorkspaceViewsTab"/>
+        <editorKitId value="OWLEditorKit"/>
+        <index value="Q"/>
+        <defaultViewConfigFileName value="viewconfig-cwatab.xml"/>
+    </extension>
+
+   
+	<!-- View -->
+	
+	<extension id="CwaViewComponent" point="org.protege.editor.core.application.ViewComponent">
+		<label value="CWA Mode View" />
+		<class value="thesis.cwa.CwaViewComponent" />
+		<headerColor value="@org.protege.ontologycolor"/>
+		<category value="@org.protege.querycategory" />
+	</extension>
+	
+	<extension id="CwaViewComponentExtended" point="org.protege.editor.core.application.ViewComponent">
+		<label value="CWA Mode Extended View" />
+		<class value="thesis.cwa.CwaViewComponentExtended" />
+		<headerColor value="@org.protege.ontologycolor"/>
+		<category value="@org.protege.querycategory" />
+	</extension>
+
+	
+	<!-- Menu -->
+	
+	<extension id="CWAModeToolMenu" point="org.protege.editor.core.application.EditorKitMenuAction">
+		<name value="CWA Mode Menu"/>
+		<path value="org.protege.editor.owl.menu.tools/SlotG-A"/>
+		<toolTip value="This menu item is used for CWA Mode."/>
+		<class value="thesis.cwa.CWAMenuItem"/>
+		<editorKitId value="any"/>
+	</extension>
+    
+</plugin>

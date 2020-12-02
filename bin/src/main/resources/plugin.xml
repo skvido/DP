@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?>
+
+<plugin>
+	
+	<!-- Menu -->
+	
+	<extension id="CWAModeToolMenu" point="org.protege.editor.core.application.EditorKitMenuAction">
+		<name value="CWA Mode Menu"/>
+		<path value="org.protege.editor.owl.menu.tools/SlotG-A"/>
+		<toolTip value="This menu item is used for CWA Mode."/>
+		<class value="edu.stanford.bmir.protege.examples.menu.ToolsMenu1"/>
+		<editorKitId value="any"/>
+	</extension>
+    
+</plugin>
